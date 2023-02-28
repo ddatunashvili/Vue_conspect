@@ -1,0 +1,16 @@
+TODO:
+< environment setup
+< directives: v-if v-else v-show 
+* vuejs.org/api/built-in-directives.html
+< Conditional Rendering
+< hooks : data(), methods,mounted(), created(), computed,watch 
+* vuejs.org/guide/essentials/lifecycle.html
+< events
+< devtool extension live variables components
+> props
+> emit
+< router  
+* https://www.vuemastery.com/blog/vue-router-a-tutorial-for-vue-3/
+< plugins
+< vuex states
+< local storage client /backend sessions  / backend cookies

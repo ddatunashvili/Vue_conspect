@@ -1,0 +1,12 @@
+
+ექსტენზიები
+> Vue 3 Snippets
+> Vue Language Features (Volar)
+
+სტრუქტურა
+<   assets - რესურსები
+<   components - page.vue 
+<   app.vue - შემოგვაქვს კომპონენტები, მთავარი
+<   main.js - პლაგინების იმპორტი
+<   package - მოდულების ფლაგინების დაყენება
+

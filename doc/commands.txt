@@ -1,0 +1,123 @@
+
+
+დაყენება
+< npm i vue  
+> npm install -g @vue-cli
+
+პროექტის შექმნა
+< vue create <project-name>
+* vue 3 ახალია უფრო
+
+გაშვება
+< npm run serve
+
+ერორ ფიქსები
+< fix multiword error
+<!-- eslint-disable vue/multi-word-component-names -->
+
+
+< fix sass 
+npm install sass-loader -D
+
+npm install node-sass -D
+
+
+< fix caching
+npm cache clean --force
+
+< vue router დაყენება
+npm  i vue-router@next
+
+< plugins 
+npm i vue3-slide-up-down
+* https://www.npmjs.com/
+* slide up down: https://www.npmjs.com/package/vue3-slide-up-down
+
+npm install vue3-scale-box
+
+
+< vuex
+npm install vuex@next --save
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+< build shit
+#!/usr/bin/env sh
+
+# abort on errors
+set -e
+
+# build
+npm run build
+
+# navigate into the build output directory
+cd dist
+
+# if you are deploying to a custom domain
+# echo 'www.example.com' > CNAME
+
+git init
+git add -A
+git commit -m 'deploy'
+
+# if you are deploying to https://<USERNAME>.github.io
+# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
+
+# if you are deploying to https://<USERNAME>.github.io/<REPO>
+# git push -f git@github.com:<USERNAME>/<REPO>.git main:gh-pages
+
+cd -
+
+
+< vue config
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/my-project/'
+    : '/'
+
+< deploy
+* არ გავუშვა npm build ან წავშალო dist ფაილი
+? თუ საჭიროა შევცვალო ბრენჩი deploy.sh ში
+bash deploy.sh
+
+< fix deploy 
+* error: failed to push some refs to
+
+git pull --rebase
+git push
+
+git ls-files --stage | grep 160000
+
+
+
+
+
+ssh-keygen -t ed25519 -C "davitidatunashvili98@gmail.com"
